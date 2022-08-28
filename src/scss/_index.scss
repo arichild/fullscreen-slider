@@ -18,13 +18,20 @@
       align-items: flex-end;
       padding-bottom: 59px;
       color: #fff;
-      // max-width: 50%;
-      padding-left: 123px;
+      padding-left: 120px;
       z-index: 1;
 
+      @media(max-width: 1360px) {
+        padding-left: 90px;
+      }
+
       @media(max-width: 1024px) {
-        padding-left: 10px;
+        padding-left: 70px;
         padding-bottom: 104px;
+      }
+
+      @media(max-width: 576px) {
+        padding-left: 0;
       }
     }
 
@@ -37,12 +44,18 @@
       margin-bottom: 100px;
       line-height: 1;
 
-      // @media all and (max-height: 800px) {
-      //   margin-bottom: 10px;
-      // }
-
       span {
         color: #FFF500;
+      }
+
+      @media(max-width: 1360px) {
+        font-size: 52px;
+        margin-bottom: 65px;
+      }
+
+      @media(max-width: 1024px) {
+        font-size: 42px;
+        margin-bottom: 45px;
       }
 
       @media(max-width: 576px) {
@@ -56,15 +69,18 @@
       font-weight: 600;
       font-size: 36px;
       line-height: 1.3;
-      margin-bottom: 86px;
+      margin-bottom: 85px;
       max-width: 703px;
 
-      // @media all and (max-height: 800px) {
-      //   margin-bottom: 10px;
-      // }
+      @media(max-width: 1360px) {
+        font-size: 24px;
+        margin-bottom: 120px;
+      }
 
       @media(max-width: 1024px) {
-        margin-bottom: 0;
+        font-size: 18px;
+        margin-bottom: 65px;
+        max-width: 494px;
       }
 
       @media(max-width: 576px) {
@@ -75,15 +91,23 @@
     &-contact {
       text-transform: uppercase;
 
-      @media(max-width: 1024px) {
-        display: none;
-      }
-
       span {
         font-weight: 800;
         font-size: 24px;
         line-height: 2;
         color: #FFF500;
+
+        @media(max-width: 1360px) {
+          font-size: 16px;
+        }
+
+        @media(max-width: 1024px) {
+          font-size: 14px;
+        }
+
+        @media(max-width: 576px) {
+          display: none;
+        }
       }
 
       a {
@@ -95,6 +119,14 @@
 
         &:hover {
           opacity: .8;
+        }
+
+        @media(max-width: 1360px) {
+          font-size: 16px;
+        }
+
+        @media(max-width: 1024px) {
+          font-size: 14px;
         }
       }
     }
@@ -125,11 +157,14 @@
       @media(max-width: 1024px) {
         padding: 0;
         background-color: transparent;
-        left: 30px;
+        left: 80px;
         transform: none;
         bottom: 28px;
       }
 
+      @media(max-width: 576px) {
+        left: 15px;
+      }
 
       .swiper-pagination {
         position: static !important;
