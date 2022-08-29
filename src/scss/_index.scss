@@ -61,6 +61,7 @@
 
       span {
         color: #FFF500;
+        word-break: break-word;
       }
 
       // @media(min-width: 1440px) {
@@ -240,7 +241,7 @@
         // padding-left: 70px;
         // padding-bottom: 104px;
         left: 70px;
-        bottom: 104px;
+        bottom: 100px;
       }
 
       @media(max-width: 768px) {
@@ -255,6 +256,36 @@
         // padding-right: 120px;
         // padding-left: 100px;
         // max-width: calc(50% - 190px);
+
+        @media(max-width: 1400px) {
+          right: 100px;
+        }
+
+        @media(max-width: 1024px) {
+          left: 0;
+          right: auto;
+          padding-left: 0;
+        }
+
+        @media(max-width: 1440px) {
+          padding-right: 20px;
+          // max-width: calc(50% - 90px);
+        }
+
+        @media(max-width: 1024px) {
+          padding-left: 70px;
+          // max-width: 50%;
+        }
+
+        @media(max-width: 768px) {
+          padding-left: 15px;
+          max-width: 100%;
+        }
+      }
+
+      &.right-180 {
+        right: 180px;
+        padding-left: 260px;
 
         @media(max-width: 1400px) {
           right: 100px;
