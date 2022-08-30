@@ -10,6 +10,10 @@ const swiper = new Swiper('.welcome', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+   autoplay: {
+    delay: 3000,
+  },
 });
 
 // We listen to the resize event

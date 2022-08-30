@@ -282,7 +282,7 @@
 
       @media(max-width: 768px) {
         // padding-left: 15px;
-        left: 15px;
+        left: 30px;
       }
 
       &.txt-right {
@@ -373,7 +373,7 @@
       }
 
       @media(max-width: 768px) {
-        left: 15px;
+        left: 30px;
       }
 
       @media(max-height: 400px) {
@@ -398,6 +398,10 @@
 
       .swiper-pagination-bullet-active {
         background-color: #FFF500;
+
+        @media(max-width: 768px) {
+          background-color: #4EA8FB;
+        }
 
         @media(max-width: 1024px) {
           width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 60px));

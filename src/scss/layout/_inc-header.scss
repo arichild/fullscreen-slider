@@ -24,6 +24,10 @@
 
   &-img {
     margin-right: 5px;
+
+    @media(max-width: 576px) {
+      margin-right: 8px;
+    }
   }
 
   &-title {
@@ -35,6 +39,7 @@
 
     @media(max-width: 576px) {
       font-size: 36px;
+      text-align: center;
     }
   }
 
@@ -49,7 +54,13 @@
 
       @media(max-width: 576px) {
         font-size: 12px;
+        letter-spacing: 0.22em;
       }
+    }
+
+    @media(max-width: 576px) {
+      text-align: left;
+
     }
   }
 
