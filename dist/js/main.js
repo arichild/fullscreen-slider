@@ -29,7 +29,7 @@ const swiper = new Swiper('.welcome', {
   },
 
    autoplay: {
-    delay: 3000,
+    // delay: 3000,
   },
 });
 
