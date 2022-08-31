@@ -9,6 +9,10 @@
     width: 100%;
     padding: 46px 0;
 
+    @media(max-height: 700px) {
+      padding: 30px 0;
+    }
+
     @media(max-width: 1024px) {
       display: flex;
       align-items: center;
@@ -18,56 +22,13 @@
   }
 
   &-logo {
-    display: flex;
-    align-items: center;
-  }
-
-  &-img {
-    margin-right: 5px;
-
-    @media(max-width: 576px) {
-      margin-right: 8px;
-    }
-  }
-
-  &-title {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 48px;
-    line-height: 1;
-    color: #fff;
-
-    @media(max-width: 576px) {
-      font-size: 36px;
-      text-align: center;
-    }
-  }
-
-  &-subtitle {
-    text-align: right;
-    display: block;
-
-    a {
-      font-weight: 527;
-      font-size: 15px;
-      color: #fff;
-
-      @media(max-width: 576px) {
-        font-size: 12px;
-        letter-spacing: 0.22em;
-      }
-    }
-
-    @media(max-width: 576px) {
-      text-align: left;
-
-    }
+    line-height: 0;
   }
 
   &-burger {
     display: none;
 
-    @media(max-width: 576px) {
+    @media(max-width: 768px) {
       display: block;
     }
   }
